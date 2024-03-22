@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Unacademy Watermark Remover",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Remove annoying account watermark from Unacademy hosted videos",
   "permissions": [
     "activeTab"
