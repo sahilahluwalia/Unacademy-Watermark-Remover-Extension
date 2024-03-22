@@ -13,16 +13,20 @@ function removeDivs() {
     }
 }
 
-console.log('Watermark Blocker: Content Script Loaded');
+function init() {
+    console.log('Watermark Blocker: Content Script Loaded');
 // Listen for DOM changes and call removeDivs if new divs are added
-const observer = new MutationObserver(mutations => {
-    mutations.forEach(mutation => {
-        if (mutation.type === 'childList') {
-            removeDivs();
-        }
+    const observer = new MutationObserver(mutations => {
+        mutations.forEach(mutation => {
+            if (mutation.type === 'childList') {
+                removeDivs();
+            }
+        });
     });
-});
 
-observer.observe(document, {childList: true, subtree: true});
+    observer.observe(document, {childList: true, subtree: true});
 // Call removeDivs on initial page load
-removeDivs();
+    removeDivs();
+}
+
+init()
