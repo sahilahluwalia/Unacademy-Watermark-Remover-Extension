@@ -1,4 +1,5 @@
 function removeDivs() {
+    const ignoreList = ['middle', 'border', 'bottom', 'empty']
     const fiveDigitsRegex = /^(?:[a-z0-9]{5})$/;
     const fourDigitsRegex = /^(?:[a-z0-9]{4})$/;
     const sixDigitsRegex = /^(?:[a-z0-9]{6})$/;
@@ -9,6 +10,9 @@ function removeDivs() {
             //remove the div
             if (divs[i].className.length === 5 || divs[i].className.length === 4 || divs[i].className.length === 6) {
                 if (fiveDigitsRegex.test(divs[i].className) || fourDigitsRegex.test(divs[i].className) || sixDigitsRegex.test(divs[i].className)) {
+                    if (ignoreList.includes(divs[i].className)) {
+                        continue;
+                    }
                     console.log('Saved by Unacademy Watermark Remover');
                     // console.log('length: ' + divs[i].className.length + ' class: ' + divs[i].className);
                     divs[i].remove();
