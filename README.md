@@ -17,3 +17,9 @@ Now, sit back, relax, and immerse yourself in uninterrupted learning without tho
 ### Note
 
 This extension is intended for personal use only. Respect the intellectual property rights of content creators and use this extension responsibly.
+
+#### Alerts
+These perky alerts
+
+![Screenshot from 2024-03-26 23-27-20(1)](https://github.com/sahilahluwalia/Unacademy-Watermark-Remover-Extension/assets/44433679/c65fbbe7-15dd-47b5-bcd4-c7e039400c41)
+
